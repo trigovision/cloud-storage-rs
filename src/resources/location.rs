@@ -131,6 +131,14 @@ pub enum AusLocation {
     Sydney,
 }
 
+/// All options in Middle East.
+#[derive(Debug, PartialEq, serde::Serialize, serde::Deserialize)]
+pub enum MELocation {
+    /// Store the files in Tel-Aviv.
+    #[serde(rename = "ME-WEST1")]
+    TelAviv,
+}
+
 /// The possible options for multi-region storage.
 #[derive(Debug, PartialEq, serde::Serialize, serde::Deserialize)]
 #[serde(rename_all = "UPPERCASE")]
